@@ -3,7 +3,7 @@
 SELECT customers.customer_name AS 'Customer',
 
 -- SUM function will take the price and months not paid for each customer and multiply to get a sum total for each customer.
-   SUM(subscriptions.price_per_month * subscriptions.subscription_length) AS 'Amount Due'
+   PRINTF('$%.2f', SUM(subscriptions.price_per_month * subscriptions.subscription_length)) AS 'Amount Due'
 
 -- Orders will be the base table for all operations   
 FROM orders
