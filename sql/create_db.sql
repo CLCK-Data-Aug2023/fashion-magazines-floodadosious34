@@ -1,3 +1,4 @@
+
 DROP TABLE IF EXISTS subscriptions;
 CREATE TABLE subscriptions (
     subscription_id INTEGER PRIMARY KEY,
